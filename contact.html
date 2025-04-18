@@ -1,12 +1,121 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Contact | ngemilsantai.id</title><link rel="stylesheet" href="style.css" /></head><body><header><div class="logo">ngemilsantai.id</div>
-<nav><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
-<li><a href="portfolio.html">Product</a></li>
-<li><a href="contact.html" class="active">Contact</a></li><li><a href="investor.html">BUY NOW</a></li></ul></nav>
-<button id="toggle-theme">🌙</button></header>
+<title>Contact | ngemilsantai.id</title>
+<link rel="stylesheet" href="style.css" />  <style>
+   .hamburger {
+      display: none;
+      font-size: 2rem;
+      background: none;
+      border: none;
+      color: var(--text);
+      cursor: pointer;
+      z-index: 1001;
+    }
+
+    /* Styling Teks Berjalan Modern */
+    .scrolling-text {
+      background-color: #ffd700;
+      color: #000;
+      font-weight: bold;
+      font-size: 1rem;
+      padding: 0.5rem;
+      white-space: nowrap;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .scrolling-text span {
+      display: inline-block;
+      padding-left: 100%;
+      animation: scroll-left 10s linear infinite;
+    }
+
+    .scrolling-text:hover span {
+      animation-play-state: paused;
+    }
+
+    /* Keyframes Animation untuk Scroll */
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: var(--bg);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        padding: 1rem 2rem;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      }
+
+      nav ul.show {
+        display: flex;
+      }
+
+      .hamburger {
+        display: block;
+        position: absolute;
+        top: 1.2rem;
+        right: 3.5rem;
+      }
+
+      #toggle-theme {
+        position: absolute;
+        top: 1.2rem;
+        right: 1.5rem;
+      }
+
+      header {
+        position: relative;
+        flex-direction: row;
+      }
+    }
+  </style></head><body><header><div class="logo">ngemilsantai.id</div>
+        <!-- Hamburger Menu Button -->
+        <button id="hamburger" class="hamburger">&#9776;</button>
+
+        <nav>
+          <ul id="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="buynow.html">BUY NOW</a></li>
+          </ul>
+        </nav>
+            
+        <!-- Toggle Dark Mode -->
+        <button id="toggle-theme">🌙</button>
+      </header>
+
+      <div class="scrolling-text">
+        <span>💬 Harga terjangkau dengan kualitas sempurna hanya di ngemilsantai.id 💬</span>
+      </div>
+    
+
 <main><section class="section animate"><h2>Contact Us</h2>
 <form class="contact-form"><input type="text" placeholder="Your Name" required />
 <input type="email" placeholder="Your Email" required />
 <textarea placeholder="Your Message" required></textarea>
 <button type="submit">Send</button></form></section></main>
-<footer><p>&copy; 2025 MyBrand. All rights reserved.</p></footer><script src="script.js"></script></body></html>
+<footer><p>&copy; 2025 MyBrand. All rights reserved.</p></footer>  <!-- Hamburger Toggle Script -->
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navMenu = document.getElementById('nav-menu');
+
+  hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('show');
+  });
+</script>
+
+<script src="script.js"></script>
+</body>
+</html>

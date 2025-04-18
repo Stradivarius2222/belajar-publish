@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Home | ngemilsantai.id</title>
-  
+  <title>Product | ngemilsantai.id</title>
+
   <link rel="stylesheet" href="style.css" />
   <style>
-    .hamburger {
+   .hamburger {
       display: none;
       font-size: 2rem;
       background: none;
@@ -89,43 +89,46 @@
 <body>
   <header>
     <div class="logo">ngemilsantai.id</div>
-    <!-- Hamburger Menu Button -->
-    <button id="hamburger" class="hamburger">&#9776;</button>
+       <!-- Hamburger Menu Button -->
+       <button id="hamburger" class="hamburger">&#9776;</button>
 
-    <nav>
-      <ul id="nav-menu">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="product.html">Product</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="buynow.html">BUY NOW</a></li>
-      </ul>
-    </nav>
+       <nav>
+         <ul id="nav-menu">
+           <li><a href="index.html">Home</a></li>
+           <li><a href="about.html" class="active">About</a></li>
+           <li><a href="product.html">Product</a></li>
+           <li><a href="contact.html">Contact</a></li>
+           <li><a href="buynow.html">BUY NOW</a></li>
+         </ul>
+       </nav>
+           
+       <!-- Toggle Dark Mode -->
+       <button id="toggle-theme">🌙</button>
+     </header>
 
-    <!-- Toggle Dark Mode -->
-    <button id="toggle-theme">🌙</button>
-  </header>
-
-  <!-- Teks Berjalan Modern -->
-  <div class="scrolling-text">
-    <span>💬 Harga terjangkau dengan kualitas sempurna hanya di ngemilsantai.id 💬</span>
-  </div>
+     <div class="scrolling-text">
+      <span>💬 Harga terjangkau dengan kualitas sempurna hanya di ngemilsantai.id 💬</span>
+    </div>  
 
   <main>
-    <section id="home" class="section animate">
-      <div class="content">
-        <h1>SIGNATURE BROWNIES</h1>
-        <p>Selamat Datang Untuk Para Pecinta Brownies Ternama. Nikmati Beragam Brownies Berkualitas Dan Terpercaya</p>
-        <p>HARGA MULAI DARI RP 90.000 SAJA!!!</p>
-      </div>
+    <section class="section animate">
+      <h2>Our Masterpieces</h2>
+      <h3>Explore our premium and exclusive brownies:</h3>
+      <div class="portfolio-gallery">
+        <div class="portfolio-item"><img src="Untitled2.png" alt="Project 1" /></div>
+        <div class="portfolio-item"><img src="Untitled3.png" alt="Project 2" /></div>
+        <div class="portfolio-item"><img src="Untitled6.png" alt="Project 3" /></div>
+        <div class="portfolio-item"><img src="Untitled11.png" alt="Project 4" /></div>
+        <div class="portfolio-item"><img src="Untitled9.png" alt="Project 5" /></div>
+        <div class="portfolio-item"><img src="Untitled4.png" alt="Project 6" /></div>
+ 
+    </div>
     </section>
-    <br><br>
   </main>
 
   <footer>
-    <p>&copy; 2025 ngemilsantai.id | All rights reserved.</p>
+    <p>&copy; 2025 MyBrand. All rights reserved.</p>
   </footer>
-
   <!-- Hamburger Toggle Script -->
   <script>
     const hamburger = document.getElementById('hamburger');

@@ -1,0 +1,142 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>BUY NOW | ngemilsantai.id</title><link rel="stylesheet" href="style.css" />
+<style>
+   .hamburger {
+      display: none;
+      font-size: 2rem;
+      background: none;
+      border: none;
+      color: var(--text);
+      cursor: pointer;
+      z-index: 1001;
+    }
+
+    /* Styling Teks Berjalan Modern */
+    .scrolling-text {
+      background-color: #ffd700;
+      color: #000;
+      font-weight: bold;
+      font-size: 1rem;
+      padding: 0.5rem;
+      white-space: nowrap;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .scrolling-text span {
+      display: inline-block;
+      padding-left: 100%;
+      animation: scroll-left 10s linear infinite;
+    }
+
+    .scrolling-text:hover span {
+      animation-play-state: paused;
+    }
+
+    /* Keyframes Animation untuk Scroll */
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: var(--bg);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        padding: 1rem 2rem;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      }
+
+      nav ul.show {
+        display: flex;
+      }
+
+      .hamburger {
+        display: block;
+        position: absolute;
+        top: 1.2rem;
+        right: 3.5rem;
+      }
+
+      #toggle-theme {
+        position: absolute;
+        top: 1.2rem;
+        right: 1.5rem;
+      }
+
+
+    header {
+      position: relative;
+      flex-direction: row;
+    }
+  }
+</style></head><body><header><div class="logo">ngemilsantai.id</div>
+      <!-- Hamburger Menu Button -->
+      <button id="hamburger" class="hamburger">&#9776;</button>
+
+      <nav>
+        <ul id="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="product.html">Product</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="buynow.html">BUY NOW</a></li>
+        </ul>
+      </nav>
+          
+      <!-- Toggle Dark Mode -->
+      <button id="toggle-theme">🌙</button>
+    </header>
+
+    <div class="scrolling-text">
+      <span>💬 Harga terjangkau dengan kualitas sempurna hanya di ngemilsantai.id 💬</span>
+    </div>
+  
+
+<main><section class="section animate">
+    <div class="container">
+        <h1>Temukan Kami di Marketplace</h1>
+        <p>Kami hadir untuk memudahkan kamu berbelanja camilan favorit secara online.</p>
+  <br>
+        <div class="platforms">
+          <a href="https://shopee.co.id/Signature-Brownies-i.65606277.3840837991?sp_atk=f87886dd-691c-4ddd-8ec0-47a1be295595&xptdk=f87886dd-691c-4ddd-8ec0-47a1be295595" target="" class="card">
+            <img src="shopee-logo.png" alt="Shopee" />
+            <span>Beli di Shopee</span>
+          </a>
+          <a href="https://instagram.com/ngemilsantai.id" target="_blank" class="card">
+            <img src="images.jpg" alt="Instagram" />
+            <span>Lihat di Instagram</span>
+          </a>
+        </div>
+  <br>
+        <p class="contact">
+          Butuh bantuan? Hubungi kami di: 
+          <a href="mailto:ngemilsantai@gmail.com">ngemilsantai@gmail.com</a>
+        </p>
+    </section>
+    <br><br>
+      <footer>
+        <p>&copy; 2025 ngemilsantai.id | All rights reserved.</p>
+      </footer>
+  <!-- Hamburger Toggle Script -->
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('show');
+    });
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
