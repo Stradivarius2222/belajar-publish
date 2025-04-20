@@ -3,141 +3,120 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Home | ngemilsantai.id</title>
-  
+  <title>English Teacher Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <style>
-    .hamburger {
-      display: none;
-      font-size: 2rem;
-      background: none;
-      border: none;
-      color: var(--text);
-      cursor: pointer;
-      z-index: 1001;
-    }
-
-    /* Styling Teks Berjalan Modern */
-    .scrolling-text {
-      background-color: #ffd700;
-      color: #000;
-      font-weight: bold;
-      font-size: 1rem;
-      padding: 0.5rem;
-      white-space: nowrap;
-      overflow: hidden;
-      position: relative;
-    }
-
-    .scrolling-text span {
-      display: inline-block;
-      padding-left: 100%;
-      animation: scroll-left 10s linear infinite;
-    }
-
-    .scrolling-text:hover span {
-      animation-play-state: paused;
-    }
-
-    /* Keyframes Animation untuk Scroll */
-    @keyframes scroll-left {
-      0% {
-        transform: translateX(0);
-      }
-      100% {
-        transform: translateX(-100%);
-      }
-    }
-
-    @media (max-width: 768px) {
-      nav ul {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background: var(--bg);
-        position: absolute;
-        top: 100%;
-        left: 0;
-        padding: 1rem 2rem;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-      }
-
-      nav ul.show {
-        display: flex;
-      }
-
-      .hamburger {
-        display: block;
-        position: absolute;
-        top: 1.2rem;
-        right: 3.5rem;
-      }
-
-      #toggle-theme {
-        position: absolute;
-        top: 1.2rem;
-        right: 1.5rem;
-      }
-
-      header {
-        position: relative;
-        flex-direction: row;
-      }
-    }
-  </style>
+ 
+ <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+ 
 </head>
-<body style="background-image: url('1high-resolution-wood-background-m04bjeiblb7j2afe.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+<body>
+  <canvas id="bgCanvas"></canvas>
 
-  <header>
-    <div class="logo">ngemilsantai.id</div>
-    <!-- Hamburger Menu Button -->
-    <button id="hamburger" class="hamburger">&#9776;</button>
-
-    <nav>
-      <ul id="nav-menu">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="product.html">Product</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="buynow.html">BUY NOW</a></li>
+  <header class="navbar">
+      
+    <nav class="nav-container">  <!-- Hamburger Icon -->
+        <div class="hamburger" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#profile">Profile</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-
-    <!-- Toggle Dark Mode -->
-    <button id="toggle-theme">🌙</button>
   </header>
 
-  <!-- Teks Berjalan Modern -->
-  <div class="scrolling-text">
-    <span>💬 Harga terjangkau dengan kualitas sempurna hanya di ngemilsantai.id 💬</span>
-  </div>
+  <section id="home" class="section home-section">
+    <p>Hi, I'm</p>
+    <h1>CINDY ARIESTA</h1>
+    <p>Corporate & Business English Trainer | English Teacher.</p>
+  </section>
 
-  <main>
-    
-    <section id="home" class="section animate">
-      <div class="content">
-        <h1>SIGNATURE BROWNIES</h1>
-        <p>Selamat Datang Untuk Para Pecinta Brownies Ternama. Nikmati Beragam Brownies Berkualitas Dan Terpercaya</p>
-        <p>HARGA MULAI DARI RP 90.000 SAJA!!!</p>
+  <section id="about" class="section">
+    <div class="about-box fade-in-box">
+      <h2>About</h2>
+      <p>An accomplished and innovative teacher with 11 years extensive experience in English industry. Teaching a wide range of skills including Business English, TOEFL, TOEIC, General English and English for Specific Purpose to both private and group with the aim of promoting and reinforcing students’ independence and self esteem. Was the school representative for doing Corporate Training to both public and private companies.</p>
+    </div>
+    <div class="skills-box fade-in-box">
+      <h2>Services</h2>
+      <p>Corporate Training • Interview Preparation • Public Speaking • Training</p>
+    </div>
+  </section>
+
+  <section id="profile" class="section profile-section">
+    <img src="Untitled.png" alt="My Photo" class="profile-pic"/>
+    <div class="text">
+      <div class="about-box fade-in-box">
+        <h2>About Me</h2>
+        <p>Hi, I’m a professional English teacher with a strong background in corporate training, language learning, and education development.</p>
       </div>
-    </section>
-    <br><br>
-  </main>
 
-  <footer>
-    <p>&copy; 2025 ngemilsantai.id | All rights reserved.</p>
-  </footer>
+      <div class="skills-box fade-in-box">
+        <h2>Skills</h2>
+        <p>English · English Business · Teaching · Public Speaking · E-Learning · Course Development</p>
+      </div>
 
-  <!-- Hamburger Toggle Script -->
+      <div class="edu-box fade-in-box">
+        <h2>Education</h2>
+        <p>
+          Universitas Multimedia Nusantara <br>
+          Gelar Sarjana, Akuntansi <br>
+          2009 - 2013<br>
+          Skills: Time Management · Interpersonal Skills · Organization Skills
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="section">
+    <h2 class="section-title">Experience</h2>
+
+    <div class="exp-box fade-in-box">
+      <h3>Corporate English Trainer and English Tutor</h3>
+      <p>Self-employed · Self-employed<br>
+      Jul 2015 - Present · 9 yrs 10 month<br>
+      Tangerang</p>
+    </div>
+
+    <div class="exp-box fade-in-box">
+      <h3>EF English First Indonesia</h3>
+      <p>Academic Project Coordinator and English Teacher<br>
+      Sep 2012 - Oct 2017 · 5 yrs 2 month</p>
+    </div>
+  </section>
+
+  <section id="portfolio" class="section">
+    <h2>Portfolio</h2>
+    <p>Check out some of the projects and courses I’ve worked on.</p>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Feel free to reach out for collaborations, projects, or classes.</p><br>
+    <p>Phone Number: 081908602202</p><br>
+    <p>Email: cindyariesta2@gmail.com</p>
+  </section>
   <script>
-    const hamburger = document.getElementById('hamburger');
-    const navMenu = document.getElementById('nav-menu');
-
-    hamburger.addEventListener('click', () => {
-      navMenu.classList.toggle('show');
+    function toggleMenu() {
+      const navLinks = document.getElementById("navLinks");
+      navLinks.classList.toggle("show");
+    }
+  
+    // Menutup menu saat salah satu item diklik
+    const navItems = document.querySelectorAll(".nav-links li a");
+    navItems.forEach(item => {
+      item.addEventListener("click", () => {
+        const navLinks = document.getElementById("navLinks");
+        navLinks.classList.remove("show");
+      });
     });
   </script>
-
+    
   <script src="script.js"></script>
 </body>
 </html>
